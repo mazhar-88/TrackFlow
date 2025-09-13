@@ -1,0 +1,78 @@
+/* App-specific styles */
+.app-root .card-map {
+  height: 420px;
+  background: linear-gradient(180deg, #eef2ff, #f8fafc);
+  border: 1px dashed rgba(13, 110, 253, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.session-participants .participant {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.btn-primary {
+  background-color: var(--brand);
+  border-color: var(--brand);
+}
+
+/* add to src/App.css (append) */
+.alert-info {
+  background: #e7f3ff;
+  border-color: #cfe9ff;
+  color: #084298;
+}
+
+.session-participants .participant {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.card-map {
+  height: 420px;
+  background: linear-gradient(180deg, #eef2ff, #f8fafc);
+  border: 1px dashed rgba(13, 110, 253, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  font-weight: 600;
+}
+/* animated gradient background for login/signup */
+.auth-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+}
