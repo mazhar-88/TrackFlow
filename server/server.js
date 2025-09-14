@@ -1,14 +1,15 @@
+import dotenv from "dotenv";
+dotenv.config(); // .env file load karega
+
 import http from "http";
 import { app } from "./app.js";
 import { connectDB } from "./config/db.js";
 import { initSocket } from "./socket.js";
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
-// http server banaya
 const server = http.createServer(app);
 
-// socket init
 initSocket(server);
 
 connectDB().then(() => {
